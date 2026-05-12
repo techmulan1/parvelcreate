@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PARVEL — Stories That Endure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="is-loading">
+
+  <!-- This is the preloader-->
+  <div id="preloader">
+    <div class="pre-inner">
+      <div class="pre-logo">
+        <span>P</span><span>A</span><span>R</span><span>V</span><span>E</span><span>L</span>
+      </div>
+      <p class="pre-tag">Stories That Endure</p>
+      <div class="pre-bar">
+        <div class="pre-fill"></div>
+      </div>
+    </div>
+    <div class="pre-curtain pre-curtain--top"></div>
+    <div class="pre-curtain pre-curtain--bot"></div>
+  </div>
+
+  <!--This is the cusor-->
+  <div id="cursor">
+    <div class="cur-dot"></div>
+    <div class="cur-ring"></div>
+  </div>
+
+  <!-- This is my nav bar-->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo" id="navLogo"><img src="./assets/parvel_logo.png" alt=""></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nl">About</a></li>
+      <li><a href="#services" class="nl">Services</a></li>
+      <li><a href="#philosophy" class="nl">Philosophy</a></li>
+      <li><a href="#work" class="nl">Work</a></li>
+      <li><a href="#testimonials" class="nl">Clients</a></li>
+      <li><a href="#contact" class="nl nl-cta">Start Your Story</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- This is my hero-section-->
+  <section id="hero">
+    <div class="hero-inner">
+
+      <!--This is the text on the left side-->
+      <div class="hero-left">
+        <div class="hero-logo" id="heroLogo">
+          <svg viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="PARVEL">
+            <rect x="0" y="0" width="5" height="56" fill="white" />
+            <rect x="0" y="0" width="34" height="5" fill="white" />
+            <rect x="0" y="26" width="28" height="5" fill="white" />
+            <rect x="29" y="0" width="5" height="31" rx="2.5" fill="white" />
+            <text x="46" y="48" font-family="'Playfair Display',serif" font-size="50" font-weight="900" fill="white"
+              letter-spacing="6">ARVEL</text>
+          </svg>
+        </div>
+
+        <p class="hero-eyebrow" id="heroEye">Creative Production Agency</p>
+
+        <h1 class="hero-hl">
+          <span class="hl" id="hl1">Stories</span>
+          <span class="hl hl-it" id="hl2">That</span>
+          <span class="hl" id="hl3">Endure.</span>
+        </h1>
+
+        <p class="hero-sub" id="heroSub">
+          We transform real experiences into cinematic narratives<br>
+          for hospitality and lifestyle brands.
+        </p>
+
+        <div class="hero-ctas" id="heroCtas">
+          <a href="tel:+2349033831825" class="btn btn-p magnetic" data-label="Call">
+            <span class="btn-tx">Call Us</span>
+            <span class="btn-bg"></span>
+          </a>
+          <a href="#contact" class="btn btn-s magnetic" data-label="Form">
+            <span class="btn-tx">Fill a Form</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: SVG camera illustration -->
+      <div class="hero-right">
+        <div class="hero-divider"></div>
+
+        <!-- Pulse rings -->
+        <div class="hring hring-1"></div>
+        <div class="hring hring-2"></div>
+        <div class="hring hring-3"></div>
+
+        <!-- Cinematic camera SVG -->
+        <div class="cam-wrap" id="camWrap">
+          <img src="./assets/cameraimg-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- The scroll thingy by the right -->
+    <div class="hero-scroll" id="heroScroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!--Thhis is the styling of my marquee part-->
+  <div class="marquee" aria-hidden="true">
+    <div class="mtrack">
+      <span>Film &amp; Video</span><span class="mdot">✦</span>
+      <span>Hospitality Content</span><span class="mdot">✦</span>
+      <span>Creative Direction</span><span class="mdot">✦</span>
+      <span>Brand Storytelling</span><span class="mdot">✦</span>
+      <span>Lifestyle Photography</span><span class="mdot">✦</span>
+      <span>Campaign Production</span><span class="mdot">✦</span>
+      <span>Film &amp; Video</span><span class="mdot">✦</span>
+      <span>Hospitality Content</span><span class="mdot">✦</span>
+      <span>Creative Direction</span><span class="mdot">✦</span>
+      <span>Brand Storytelling</span><span class="mdot">✦</span>
+      <span>Lifestyle Photography</span><span class="mdot">✦</span>
+      <span>Campaign Production</span><span class="mdot">✦</span>
+    </div>
+  </div>
+
+  <!-- This is the sbout section-->
+  <section id="about">
+    <div class="container about-grid">
+
+      <!-- I put avide o here. Client video-->
+      <div class="about-vid-col">
+        <div class="vid-frame reveal-img">
+          <!-- This is the about section video -->
+          <video autoplay muted loop playsinline
+            poster="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=900&q=80">
+            <source src="./assets/clientvideo.mp4" type="video/mp4" />
+          </video>
+          <div class="vid-overlay"></div>
+          <!-- The play dummy button -->
+          <button class="vid-play" id="vidToggle" aria-label="Play/Pause">
+            <svg id="vidIcon" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- The text on the right -->
+      <div class="about-text-col">
+        <p class="slbl rup">About PARVEL</p>
+        <h2 class="about-hl reveal-lines">
+          We think like<br><em>filmmakers</em>,<br>not just creators.
+        </h2>
+        <p class="about-body rup">
+          PARVEL is a creative production agency obsessed with the art of visual storytelling.
+          We partner with hospitality and lifestyle brands to capture the emotions, textures,
+          and moments that define a truly extraordinary experience.
+        </p>
+        <p class="about-body rup">
+          Every project begins with a single question:
+          <em>What is the story only you can tell?</em> From that truth, we build worlds.
+        </p>
+        <div class="about-stats">
+          <div class="a-stat rup">
+            <span class="a-stat-n" data-target="120">0</span><span class="a-stat-suf">+</span>
+            <span class="a-stat-l">Projects Delivered</span>
+          </div>
+          <div class="a-stat rup">
+            <span class="a-stat-n" data-target="40">0</span><span class="a-stat-suf">+</span>
+            <span class="a-stat-l">Brand Partners</span>
+          </div>
+          <div class="a-stat rup">
+            <span class="a-stat-n" data-target="7">0</span><span class="a-stat-suf">+</span>
+            <span class="a-stat-l">Years Crafting Stories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--This is the part that contains the services-->
+  <section id="services">
+    <div class="container">
+      <div class="svc-hdr">
+        <p class="slbl rup">What We Do</p>
+        <h2 class="svc-hl reveal-lines">Our<br><em>Services</em></h2>
+      </div>
+      <div class="svc-grid">
+
+        <article class="sc">
+          <div class="sc-img">
+            <img src="https://images.unsplash.com/photo-1540655037529-dec987208707?w=600&q=70" alt="Film & Video" />
+          </div>
+          <div class="sc-body">
+            <span class="sc-num">01</span>
+            <h3 class="sc-title">Film &amp; Video</h3>
+            <p class="sc-desc">Cinematic productions that move people — from brand films and documentaries to
+              social-first content.</p>
+            <div class="sc-arr">→</div>
+          </div>
+        </article>
+
+        <article class="sc">
+          <div class="sc-img">
+            <img src="/assets/ladyinblue.jpg" alt="Hospitality Content" />
+          </div>
+          <div class="sc-body">
+            <span class="sc-num">02</span>
+            <h3 class="sc-title">Hospitality Content</h3>
+            <p class="sc-desc">Luxury hotel and resort campaigns, F&B visual storytelling, and experiential brand
+              content.</p>
+            <div class="sc-arr">→</div>
+          </div>
+        </article>
+
+        <article class="sc">
+          <div class="sc-img">
+            <img src="./assets/ankarawomansitting.jpg" alt="Creative Direction" />
+          </div>
+          <div class="sc-body">
+            <span class="sc-num">03</span>
+            <h3 class="sc-title">Creative Direction</h3>
+            <p class="sc-desc">Full creative concepting, art direction, and visual strategy from initial brief to final
+              delivery.</p>
+            <div class="sc-arr">→</div>
+          </div>
+        </article>
+
+        <article class="sc">
+          <div class="sc-img">
+            <img src="./assets/girlinblue.jpg" alt="Lifestyle Photography" />
+          </div>
+          <div class="sc-body">
+            <span class="sc-num">04</span>
+            <h3 class="sc-title">Lifestyle Photography</h3>
+            <p class="sc-desc">Editorial and commercial photography that captures the mood, culture, and soul of your
+              brand.</p>
+            <div class="sc-arr">→</div>
+          </div>
+        </article>
+
+        <article class="sc">
+          <div class="sc-img">
+            <img src="./assets/ankarawoman.jpg" alt="Brand Campaigns" />
+          </div>
+          <div class="sc-body">
+            <span class="sc-num">05</span>
+            <h3 class="sc-title">Brand Campaigns</h3>
+            <p class="sc-desc">Integrated multi-platform campaign production — digital, social, OOH — built around one
+              story.</p>
+            <div class="sc-arr">→</div>
+          </div>
+        </article>
+
+        <article class="sc">
+          <div class="sc-img">
+            <img src="/assets/ladyinblueagain.jpg" alt="Post Production" />
+          </div>
+          <div class="sc-body">
+            <span class="sc-num">06</span>
+            <h3 class="sc-title">Post Production</h3>
+            <p class="sc-desc">Color grading, sound design, VFX, and editing that elevates raw footage into refined
+              cinematic work.</p>
+            <div class="sc-arr">→</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the parvel difference section -->
+  <section id="philosophy">
+    <div class="phil-bg">
+      <!-- <svg class="phil-bg-svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="1440" y2="800" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        <line x1="400" y1="0" x2="1440" y2="600" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+        <line x1="0" y1="200" x2="1000" y2="800" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+        <circle cx="1100" cy="400" r="280" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        <circle cx="1100" cy="400" r="180" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <circle cx="1100" cy="400" r="80"  fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        <rect x="900" y="200" width="360" height="400" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1" transform="rotate(15 1080 400)"/>
+      </svg> -->
+
+      <video class="phil-bg-svg" src="./assets/naturecompilation-IGratio.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="container phil-content">
+      <p class="slbl rup">The PARVEL Difference</p>
+      <h2 class="phil-hl reveal-lines">Every frame<br>is a <em>decision</em>.</h2>
+
+      <div class="phil-pillars">
+        <div class="pillar rup">
+          <span class="pillar-num">I</span>
+          <h3>Truth Before Aesthetic</h3>
+          <p>Great films begin with honesty. We excavate what makes your brand irreplaceable before we pick up a camera.
+          </p>
+        </div>
+        <div class="pillar rup">
+          <span class="pillar-num">II</span>
+          <h3>Emotion as Strategy</h3>
+          <p>Emotion isn't decoration — it's the engine. Every visual choice is made to produce a specific feeling.</p>
+        </div>
+        <div class="pillar rup">
+          <span class="pillar-num">III</span>
+          <h3>Craft at Every Scale</h3>
+          <p>Whether it's a 30-second reel or a 10-minute brand documentary, we bring the same uncompromising precision.
+          </p>
+        </div>
+        <div class="pillar rup">
+          <span class="pillar-num">IV</span>
+          <h3>Stories That Endure</h3>
+          <p>We don't make content for the algorithm. We make work that people remember a decade from now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- This is a video carousel of our  work..-->
+  <section id="work">
+    <div class="container work-hdr">
+      <p class="slbl rup">Selected Work</p>
+      <h2 class="work-hl reveal-lines">Our<br><em>Work</em></h2>
+    </div>
+
+    <!-- The carousel it sekf -->
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="citem">
+          <div class="citem-media">
+
+            <video muted loop playsinline poster="./assets/ghanaposter.jpg">
+              <source src="./assets/ghanawithigratio.mp4" type="video/mp4" />
+            </video>
+            <div class="citem-hover-play">▶</div>
+          </div>
+          <div class="citem-info">
+            <span class="citem-cat">Hospitality Campaign</span>
+            <h3>The Grand Aura Hotel</h3>
+          </div>
+        </div>
+
+        <div class="citem">
+          <div class="citem-media">
+            <video muted loop playsinline
+              poster="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=75">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                type="video/mp4" />
+            </video>
+            <div class="citem-hover-play">▶</div>
+          </div>
+          <div class="citem-info">
+            <span class="citem-cat">F&amp;B Brand Film</span>
+            <h3>Saveur Lagos</h3>
+          </div>
+        </div>
+
+        <div class="citem">
+          <div class="citem-media">
+            <video muted loop playsinline
+              poster="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=75">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                type="video/mp4" />
+            </video>
+            <div class="citem-hover-play">▶</div>
+          </div>
+          <div class="citem-info">
+            <span class="citem-cat">Lifestyle Documentary</span>
+            <h3>Nomad Retreats</h3>
+          </div>
+        </div>
+
+        <div class="citem">
+          <div class="citem-media">
+            <video muted loop playsinline
+              poster="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=75">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                type="video/mp4" />
+            </video>
+            <div class="citem-hover-play">▶</div>
+          </div>
+          <div class="citem-info">
+            <span class="citem-cat">Brand Identity Film</span>
+            <h3>Oasis Spa Co.</h3>
+          </div>
+        </div>
+
+        <div class="citem">
+          <div class="citem-media">
+            <video muted loop playsinline
+              poster="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=75">
+              <source
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+                type="video/mp4" />
+            </video>
+            <div class="citem-hover-play">▶</div>
+          </div>
+          <div class="citem-info">
+            <span class="citem-cat">Fashion Campaign</span>
+            <h3>Velvet Collection</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <div class="carousel-controls">
+        <button class="car-btn car-prev" id="carPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="15,18 9,12 15,6" />
+          </svg>
+        </button>
+        <div class="car-dots" id="carDots"></div>
+        <button class="car-btn car-next" id="carNext" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="9,6 15,12 9,18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the testimonial section-->
+  <section id="testimonials">
+    <div class="container">
+      <p class="slbl rup">What Clients Say</p>
+      <h2 class="testi-hl reveal-lines">Trusted by<br><em>the Best</em></h2>
+
+      <div class="testi-grid">
+
+        <div class="tcard rup">
+          <div class="tcard-quote">
+            "PARVEL didn't just deliver a video — they delivered a feeling. Every single frame told the story we'd been
+            trying to put into words for years."
+          </div>
+          <div class="tcard-rule"></div>
+          <div class="tcard-client">
+            <div class="tcard-avatar">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&q=70" alt="Amara Osei" />
+            </div>
+            <div>
+              <span class="tcard-name">Amara Osei</span>
+              <span class="tcard-role">GM, Grand Aura Hotels · Accra</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard rup">
+          <div class="tcard-quote">
+            "Working with PARVEL transformed how guests perceive our brand. The quality is on another level — truly
+            cinematic work for our Lagos restaurant."
+          </div>
+          <div class="tcard-rule"></div>
+          <div class="tcard-client">
+            <div class="tcard-avatar">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=120&q=70" alt="Zainab Musa" />
+            </div>
+            <div>
+              <span class="tcard-name">Zainab Musa</span>
+              <span class="tcard-role">Founder, Saveur Lagos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard rup">
+          <div class="tcard-quote">
+            "Their storytelling philosophy is rare. They asked us questions no other agency had — and the final film
+            showed exactly why that matters."
+          </div>
+          <div class="tcard-rule"></div>
+          <div class="tcard-client">
+            <div class="tcard-avatar">
+              <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=120&q=70" alt="Kofi Mensah" />
+            </div>
+            <div>
+              <span class="tcard-name">Kofi Mensah</span>
+              <span class="tcard-role">Creative Director, Nomad Retreats</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the contact form-->
+  <section id="contact">
+    <div class="contact-content">
+      <p class="slbl rup">Ready to Begin?</p>
+      <h2 class="contact-hl reveal-lines">Start Your<br><em>Story.</em></h2>
+
+      <div class="contact-opts">
+        <a href="tel:+2349033831825" class="copt rup">
+          <span class="copt-icon">☎</span>
+          <div>
+            <span class="copt-lbl">Call Us Directly</span>
+            <span class="copt-val">+234 903 383 1825</span>
+          </div>
+        </a>
+        <a href="https://wa.me/2349033831825" target="_blank" rel="noopener" class="copt rup">
+          <span class="copt-icon">◈</span>
+          <div>
+            <span class="copt-lbl">WhatsApp</span>
+            <span class="copt-val">Message Us Now</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="cform-wrap rup">
+        <form id="contactForm" class="cform">
+          <div class="form-row">
+            <div class="ff">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="Full name" required />
+              <span class="fline"></span>
+            </div>
+            <div class="ff">
+              <label for="fbrand">Brand / Company</label>
+              <input type="text" id="fbrand" name="brand" placeholder="Your brand" />
+              <span class="fline"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="ff">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="you@brand.com" required />
+              <span class="fline"></span>
+            </div>
+            <div class="ff">
+              <label for="fphone">Phone</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+234..." />
+              <span class="fline"></span>
+            </div>
+          </div>
+          <div class="ff ff-full">
+            <label for="fproject">Tell Us About Your Project</label>
+            <textarea id="fproject" name="project" rows="4" placeholder="What story do you want to tell?"></textarea>
+            <span class="fline"></span>
+          </div>
+          <button type="submit" class="btn btn-p btn-lg magnetic">
+            <span class="btn-tx">Send Your Story</span>
+            <span class="btn-bg"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--This is my footer-->
+  <footer>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <span class="ft-logo">PARVEL</span>
+        <p class="ft-motto">Stories That Endure.</p>
+      </div>
+      <nav class="ft-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="ft-social">
+        <a href="https://wa.me/2349033831825" target="_blank" rel="noopener">WA</a>
+        <a href="#">IG</a>
+        <a href="#">VM</a>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2025 PARVEL Creative Production. All rights reserved.</span>
+      <span>Lagos, Nigeria</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
