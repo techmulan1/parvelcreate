@@ -956,6 +956,9 @@ body.cm .cur-ring {
   width: 100%;
   height: 100%;
   filter: brightness(30%);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .phil-content {
@@ -1607,7 +1610,6 @@ body::after {
 
   #hero {
     padding-top: clamp(110px, 20vw, 150px);
-    /* enough clearance on mobile too */
   }
 
   .hero-inner {
@@ -1663,7 +1665,6 @@ body::after {
     flex: 0 0 calc(90% - 12px);
   }
 
-  /* Mobile: restore default cursor */
   body {
     cursor: auto;
   }
